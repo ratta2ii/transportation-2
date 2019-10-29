@@ -5,12 +5,46 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Transportation 2</title>
   </head>
   <body>
 
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Transportation Survey</h1>
+      </div>
 
+      <form class="form-1" action="index.html" method="post">
 
+          <div class="form-group">
+            <p>Which methods of transportation have you used to get to work in the last 5 years?</p>
+            <input type="checkbox" name="work-transportation" value="Bike">Biking<br>
+            <input type="checkbox" name="work-transportation" value="Walk">Walking<br>
+            <input type="checkbox" name="work-transportation" value="Drive">Driving<br>
+            <input type="checkbox" name="work-transportation" value="Train">Train<br>
+            <input type="checkbox" name="work-transportation" value="Bus">Bus<br>
+          </div>
+
+          <div class="form-group">
+            <p>Which methods of transportation have you used for fun in the last 5 years?</p>
+            <input type="checkbox" name="fun-transportation" value="Bike">Biking<br>
+            <input type="checkbox" name="fun-transportation" value="Walk">Walking<br>
+            <input type="checkbox" name="fun-transportation" value="Drive">Driving<br>
+            <input type="checkbox" name="fun-transportation" value="Train">Train<br>
+            <input type="checkbox" name="fun-transportation" value="Bus">Bus<br>
+          </div>
+
+          <button type="submit" class="btn btn-success" name="button">Submit</button>
+
+      </form>
+
+      <span id="hidden-text">
+        <p>I traveled to work in the following ways over the last 5 year:</p>
+      </span>
+
+      <span id="hidden-text-2" >
+        <p>For fun, I used the follwing ways to travel over the last 5 years:</p>
+      </span>
 
   </body>
 </html>
